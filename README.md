@@ -23,6 +23,11 @@ This project was developed as part of a university assignment, but it’s also s
 - Finnish translation was generated using AI (ChatGPT), so minor language inaccuracies are possible.
 
 ---
+## 📸 Video Link for YouTube
+
+https://youtu.be/YvJB74KQfKk
+
+---
 
 ## 📦 APK & Installation
 
