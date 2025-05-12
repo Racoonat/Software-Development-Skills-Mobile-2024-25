@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/coverImageButton"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:contentDescription="@string/book_cover"
+            android:src="@drawable/default_book_cover" />
+
+
+        <!-- Título del libro -->
+        <EditText
+            android:id="@+id/bookTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book_title"
+            android:inputType="text" />
+        <!-- Autor del libro -->
+        <EditText
+            android:id="@+id/bookAuthorInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book_author"
+            android:inputType="text" />
+        <!-- isbn del libro -->
+        <EditText
+            android:id="@+id/bookisbnInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book_isbn"
+            android:inputType="text" />
+        <!-- pages del libro -->
+        <EditText
+            android:id="@+id/bookpagesInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book_pages"
+            android:inputType="number" />
+
+
+        <!-- Spinner para seleccionar el estado del libro -->
+        <Spinner
+            android:id="@+id/statusSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Campos que se mostrarán dependiendo del estado del libro -->
+        <LinearLayout
+            android:id="@+id/readFieldsLayout"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Fecha de inicio de lectura -->
+            <EditText
+                android:id="@+id/startDateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/start_date"
+                android:inputType="date" />
+
+            <!-- Fecha de finalización de lectura -->
+            <EditText
+                android:id="@+id/endDateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/end_date"
+                android:inputType="date" />
+
+            <!-- Valoración -->
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+            android:rating="0" />
+
+            <!-- Notas personales -->
+            <EditText
+                android:id="@+id/notesInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/notes"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+
+        <!-- Botón para añadir una nueva sesión de lectura -->
+        <Button
+            android:id="@+id/addReadingSessionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_book"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

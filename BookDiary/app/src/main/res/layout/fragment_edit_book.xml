@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Imagen de portada -->
+        <ImageButton
+            android:id="@+id/editCoverImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_book_cover"
+            android:contentDescription="@string/select_cover_image"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book_title" />
+
+        <EditText
+            android:id="@+id/editAuthorInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book_author" />
+
+        <EditText
+            android:id="@+id/editIsbnInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book_isbn" />
+
+        <EditText
+            android:id="@+id/editPagesInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/book_pages"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/saveBookButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/deleteBookButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/holo_red_dark"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
